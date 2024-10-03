@@ -15,7 +15,7 @@ class DisplayActivity : AppCompatActivity() {
     val launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
         if(it.resultCode == RESULT_OK){
             it.data?.apply {
-                resultTextView.text = getStringExtra(RESULT_KEY)
+                //resultTextView.text = getStringExtra(RESULT_KEY)
             }
         }
     }
