@@ -29,7 +29,7 @@ class TextSizeActivity : AppCompatActivity() {
 
             // TODO Step 2: Pass selected value back to activity that launched TextSizeActivity
             adapter = TextSizeAdapter(textSizes){
-                Intent().putExtra("result", "some value")
+                Intent().putExtra("result", it)
                 setResult(Activity.RESULT_OK, Intent())
                 finish()
             }
